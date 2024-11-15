@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 3 - Analyse des Données SQL</title>
+    <link rel="stylesheet" href="css/style_mission3.css">
+</head>
+<body>
+<header>
+    <h1>Mission 3 - Analyse des Données avec le SQL</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="mission1.html">Mission 1</a></li>
+        <li><a href="mission2.html">Mission 2</a></li>
+        <li><a href="mission3.html">Mission 3</a></li>
+        <li><a href="conclusion.html">Conclusion</a></li>
+        <li><a href="rapport.html">Rédaction du Rapport</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Contexte</h2>
+        <p>Dans cette mission, nous avons analysé les données de KDou en utilisant le langage SQL pour extraire des indicateurs clés et faciliter la prise de décision stratégique. Les thèmes explorés comprennent les catégories de desserts et boissons, l’offre de KDou, la provenance des produits, et l’analyse de la clientèle.</p>
+    </section>
+
+    <!-- Thème 1 : Desserts / Boissons -->
+    <section>
+        <h2>Thème 1 : Desserts/Boissons</h2>
+
+        <!-- Indicateur 1 -->
+        <section>
+            <h3>Indicateur 1 : Produits Desserts/Boissons vendus à 50€ ou plus</h3>
+            <p><strong>Interprétation :</strong> Permet d’identifier les produits de luxe ou à marge élevée dans ces catégories, principalement pour ajuster l’offre en fonction de la demande pour ces produits de gamme supérieure.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/desserts_boissons/indicateur1_tableau.png" alt="Produits Desserts/Boissons vendus à 50€ ou plus">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/desserts_boissons/indicateur1_sql.png" alt="Code SQL indicateur 1 Produits Desserts/Boissons">
+        </section>
+
+        <!-- Indicateur 2 -->
+        <section>
+            <h3>Indicateur 2 : Chiffre d’affaires pour les catégories Desserts et Boissons</h3>
+            <p><strong>Interprétation :</strong> Fournit un aperçu de la rentabilité de ces catégories et aide à décider de renforcer ou ajuster l’offre en fonction des ventes.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/desserts_boissons/indicateur2_tableau.png" alt="Chiffre d’affaires pour les catégories Desserts et Boissons">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/desserts_boissons/indicateur2_sql.png" alt="Code SQL indicateur 2 Produits Desserts/Boissions">
+        </section>
+    </section>
+
+    <!-- Thème 2 : L’offre de KDou -->
+    <section>
+        <h2>Thème 2 : L’offre de KDou</h2>
+
+        <!-- Indicateur 1 -->
+        <section>
+            <h3>Indicateur 1 : Produits non commandés par catégorie</h3>
+            <p><strong>Interprétation :</strong> Permet de repérer les produits moins populaires et d’ajuster l’offre en retirant ou en promouvant ces produits pour réduire les coûts de stockage.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/offre_kdou/indicateur1_tableau.png" alt="Produits non commandés par catégorie">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/offre_kdou/indicateur1_sql.png" alt="Code SQL indicateur 1 Offre Kdou">
+        </section>
+
+        <!-- Indicateur 2 -->
+        <section>
+            <h3>Indicateur 2 : Pays avec une offre importante de produits</h3>
+            <p><strong>Interprétation :</strong> Aide à analyser la dépendance à certains pays fournisseurs et à diversifier les sources d’approvisionnement pour minimiser les risques.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/offre_kdou/indicateur2_tableau.png" alt="Pays avec une offre importante de produits">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/offre_kdou/indicateur2_sql.png" alt="">
+        </section>
+    </section>
+
+    <!-- Thème 3 : Provenance des produits -->
+    <section>
+        <h2>Thème 3 : Provenance des produits</h2>
+
+        <!-- Indicateur 1 -->
+        <section>
+            <h3>Indicateur 1 : Desserts et Boissons d’Allemagne vendus à moins de 100€</h3>
+            <p><strong>Interprétation :</strong> Identifier les produits abordables d'Allemagne pour ajuster l’offre en fonction de la demande et de la compétitivité sur les prix.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/provenance_produits/indicateur1_tableau.png" alt="Desserts et Boissons d’Allemagne vendus à moins de 100€">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/provenance_produits/indicateur1_sql.png" alt="Code SQL indicateur 1">
+        </section>
+
+        <!-- Indicateur 2 -->
+        <section>
+            <h3>Indicateur 2 : Fournisseurs qui vendent uniquement des boissons ou des desserts</h3>
+            <p><strong>Interprétation :</strong> Fournit une vue d’ensemble sur les noms des fournisseurs qui vendent des boissons ou des desserts.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/provenance_produits/indicateur2_tableau.png" alt="Fournisseurs par pays">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/provenance_produits/indicateur2_sql.png" alt="Code SQL de l'indicateur 2">
+        </section>
+    </section>
+
+    <!-- Thème 4 : La clientèle -->
+    <section>
+        <h2>Thème 4 : La clientèle</h2>
+
+        <!-- Indicateur 1 -->
+        <section>
+            <h3>Indicateur 1 : Clients n’ayant pas reçu la remise maximale de 25%</h3>
+            <p><strong>Interprétation :</strong> Cet indicateur aide KDou à identifier les clients qui n’ont pas encore bénéficié des remises maximales. Cela peut permettre de cibler ces clients pour de futures campagnes de fidélisation, leur offrant ainsi des promotions pour les inciter à passer davantage de commandes.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/clientele/indicateur1_tableau1.png" alt="Clients n’ayant pas reçu la remise maximale de 25% partie 1"><img src="img/mission3/clientele/indicateur1_tableau2.png" alt="Clients n’ayant pas reçu la remise maximale de 25% partie 2">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/clientele/indicateur1_sql.png" alt="Code SQL indicateur 1">
+        </section>
+
+        <!-- Indicateur 2 -->
+        <section>
+            <h3>Indicateur 2 : Produits avec remises de 10%, 20% ou sans remise</h3>
+            <p><strong>Interprétation :</strong> Cet indicateur permet de repérer les produits pour lesquels les remises n’ont pas été appliquées au maximum. KDou peut analyser ces produits pour décider d’ajuster les remises et ainsi encourager leur vente en appliquant des remises plus attractives.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/clientele/indicateur2_tableau1.png" alt="Produits avec remises de 10%, 20% ou sans remise partie 1"><img src="img/mission3/clientele/indicateur2_tableau2.png" alt="Produits avec remises de 10%, 20% ou sans remise partie 2"><img src="img/mission3/clientele/indicateur2_tableau3.png" alt="Produits avec remises de 10%, 20% ou sans remise partie 3"><img src="img/mission3/clientele/indicateur2_tableau4.png" alt="Produits avec remises de 10%, 20% ou sans remise partie 4">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/clientele/indicateur2_sql.png" alt="Code SQL indicateur 2">
+        </section>
+    </section>
+    <section>
+        <h2>Présentation de nos indicateurs</h2>
+
+        <!-- Indicateur d'Ilan -->
+        <section>
+            <h3>Indicateur 1 : Analyse des produits non commandés (par Ilan)</h3>
+            <p><strong>Objectif :</strong> Lister les produits qui n'ont jamais été commandés pour permettre à KDou de décider s’ils doivent être retirés de l'offre.</p>
+            <p><strong>Intérêt :</strong> Cet indicateur permet d'identifier les produits sans intérêt client, aidant ainsi à optimiser l'offre en éliminant les articles peu attractifs ou en ajustant leur promotion.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/requetes_perso/indicateur_Ilan_tableau.png" alt="Produits non commandés">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/requetes_perso/indicateur_Ilan_sql.png" alt="Code SQL indicateur Ilan">
+        </section>
+
+        <!-- Indicateur d'Abel -->
+        <section>
+            <h3>Indicateur 2 : Liste des fournisseurs avec le plus grand nombre de produits vendus (par Abel)</h3>
+            <p><strong>Objectif :</strong> Identifier les fournisseurs les plus performants en fonction du nombre de produits vendus à KDou.</p>
+            <p><strong>Intérêt :</strong> Cet indicateur permet de cibler les fournisseurs stratégiques, en facilitant la gestion de partenariats avec ceux qui contribuent le plus aux ventes globales.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/requetes_perso/indicateur_Abel_tableau.png" alt="Fournisseurs avec le plus grand nombre de produits vendus">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/requetes_perso/indicateur_Abel_sql.png" alt="Code SQL indicateur Abel">
+        </section>
+
+        <!-- Indicateur de Malik -->
+        <section>
+            <h3>Indicateur 3 : Analyse des catégories de produits les plus vendues (par Malik)</h3>
+            <p><strong>Objectif :</strong> Identifier les catégories de produits les plus rentables pour concentrer les efforts marketing sur celles-ci.</p>
+            <p><strong>Intérêt :</strong> Connaître les catégories qui génèrent le plus de ventes aide à optimiser l'offre et les actions commerciales de KDou, maximisant ainsi le chiffre d’affaires.</p>
+
+            <h4>Résultat</h4>
+            <p>Tableau :</p>
+            <img src="img/mission3/requetes_perso/indicateur_Malik_tableau.png" alt="Catégories de produits les plus vendues">
+
+            <p>Code SQL :</p>
+            <img src="img/mission3/requetes_perso/indicateur_Malik_sql.png" alt="Code SQL indicateur Malik">
+        </section>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 - Équipe 10D - Saé Base de Données</p>
+</footer>
+</body>
+</html>

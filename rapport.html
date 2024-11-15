@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rédaction du Rapport</title>
+    <link rel="stylesheet" href="css/style_rapport.css">
+</head>
+<body>
+<header>
+    <h1>Synthèse et Explication du Rapport</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="mission1.html">Mission 1</a></li>
+        <li><a href="mission2.html">Mission 2</a></li>
+        <li><a href="mission3.html">Mission 3</a></li>
+        <li><a href="conclusion.html">Conclusion</a></li>
+        <li><a href="rapport.html">Rédaction du Rapport</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Synthèse Générale</h2>
+        <p>Ce rapport a été réalisé dans le cadre de l’analyse des données de KDou. La mission comprend trois analyses distinctes sur les données, chacune ayant ses propres objectifs et indicateurs. Le site HTML a été structuré pour faciliter la navigation et la présentation de chaque mission de manière claire, permettant aux utilisateurs de comprendre et d’explorer chaque partie de l’analyse.</p>
+
+        <h3>Structure des Pages</h3>
+        <p>Chaque mission possède sa propre page HTML, organisée en sections distinctes avec des titres pour chaque indicateur. Cette structuration permet une lecture intuitive et un accès rapide aux résultats et interprétations :</p>
+        <ul>
+            <li><strong>Accueil (index.html) :</strong> Présente le contexte et les objectifs globaux de l’analyse.</li>
+            <li><strong>Mission 1, Mission 2, Mission 3 :</strong> Chaque page (mission1.html, mission2.html, mission3.html) détaille les objectifs, les indicateurs, les résultats, et les interprétations spécifiques à la mission.</li>
+            <li><strong>Conclusion :</strong> Résume les axes d’amélioration et les recommandations pour KDou suite à l’analyse.</li>
+            <li><strong>Rédaction du Rapport :</strong> Fournit une explication des choix techniques et de la structure du site HTML et CSS.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Choix Techniques et Explications</h2>
+
+        <h3>Organisation des Fichiers CSS</h3>
+        <p>Chaque page possède un fichier CSS distinct afin de permettre un contrôle précis sur le style de chaque page. Les styles de base (couleurs, polices, espacements) sont unifiés pour garantir une cohérence visuelle sur l'ensemble du site.</p>
+        <ul>
+            <li><strong>Couleurs de chaque page :</strong> Chaque fichier CSS utilise une couleur dominante unique pour les en-têtes et la navigation, facilitant l’identification de la page par l’utilisateur.</li>
+            <li><strong>Navigation :</strong> Le menu de navigation utilise des liens qui affichent un soulignement au survol, offrant une meilleure interaction utilisateur.</li>
+            <li><strong>Media Queries :</strong> Des media queries sont intégrées dans chaque fichier CSS pour ajuster la mise en page en fonction de la taille de l'écran, garantissant ainsi une lisibilité optimale sur ordinateurs, tablettes et smartphones.</li>
+        </ul>
+
+        <h3>Structure HTML et Accessibilité</h3>
+        <p>Les pages HTML sont organisées avec des balises sémantiques pour faciliter l’accessibilité et la lisibilité :</p>
+        <ul>
+            <li><code>&lt;header&gt;</code> : Contient le titre de chaque page avec un en-tête distinctif pour identifier la section en cours.</li>
+            <li><code>&lt;nav&gt;</code> : La barre de navigation utilise des balises <code>&lt;a&gt;</code> et des liens pour pouvoir changer de page.</li>
+            <li><code>&lt;main&gt;</code> : Contient le contenu principal, structuré en sections avec des sous-titres pour chaque indicateur.</li>
+            <li><code>&lt;section&gt;</code> : Chaque indicateur est placé dans une balise <code>&lt;section&gt;</code> pour une hiérarchisation logique et une meilleure accessibilité.</li>
+            <li><code>&lt;footer&gt;</code> : Utilisé pour le copyright et les informations de bas de page, uniforme sur toutes les pages.</li>
+        </ul>
+
+        <h3>Présentation des Indicateurs et des Résultats</h3>
+        <p>Les résultats sont présentés sous forme de tableaux d’images et de blocs de code pour les requêtes SQL (captures d'écran à partir de la base de données sous Access). Cette approche permet d’améliorer la lisibilité et de fournir un format visuel adapté aux utilisateurs non techniques. Les balises <code>&lt;img&gt;</code> sont utilisées pour afficher les résultats et le code SQL sous forme d’images, permettant une visualisation rapide des données.</p>
+    </section>
+
+    <section>
+        <h2>Explication des Styles CSS Clés</h2>
+
+        <h3>Barre de Navigation</h3>
+        <p>La barre de navigation utilise un style sobre avec des effets de survol et un état actif. Les liens sont centrés et espacé pour améliorer la lisibilité.</p>
+        <pre><code>
+/* Style de base pour la barre de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Effet au survol pour tous les liens */
+nav ul li a:hover {
+    color: #ffde59;
+}
+        </code></pre>
+        <p>Ce style ajoute une couleur distincte et un soulignement au lien survolé. L'effet de survol (<code>:hover</code>) change la couleur pour indiquer au visiteur que le lien est cliquable.</p>
+
+        <h3>Media Queries pour Responsivité</h3>
+        <p>Les media queries permettent de modifier la mise en page en fonction de la taille de l’écran, pour une expérience fluide sur tous les appareils.</p>
+        <pre><code>
+/* Media Query pour les smartphones */
+@media screen and (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 10px;
+        text-align: center;
+    }
+}
+        </code></pre>
+        <p>Ce code utilise des media queries pour ajuster la mise en page. Sur les petits écrans, le menu devient vertical et la taille des polices est réduite pour maximiser l’espace.</p>
+        <p>Pour les autres styles CSS, nous avons regardé dans le cours ou sur Internet la documentation des balises correspondantes à l'effet que nous voulions créer.</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 - Équipe 10D - Saé Base de Données</p>
+</footer>
+</body>
+</html>
